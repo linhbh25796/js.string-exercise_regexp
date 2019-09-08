@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Kiểm tra pass word</title>
+</head>
+<body>
+<script>
+    function check(pass) {
+        let regexp = /^[a-z0-9_-]{6,18}$/;
+        if (regexp.test(pass)) {
+            document.write("<br/>" + pass + " :Ok");
+        } else {
+            document.write("<br/>" + pass + " :False");
+        }
+    }
+
+    var pass = 'deptraicogilasai';
+    var pass2 = 'aaaaaaaaaaaaaaaaaaaaa';
+    var pass3 = '&&&$$$$$';
+    var pass4 = '123z';
+    var pass5 ='okpassnaydc_123';
+    check(pass);
+    check(pass2);
+    check(pass3);
+    check(pass4);
+    check(pass5)
+</script>
+</body>
+</html>
